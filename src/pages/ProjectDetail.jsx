@@ -3,22 +3,21 @@ import { projects } from '../data/projects';
 
 export default function ProjectDetails() {
   const { id } = useParams();
-  const project = projects.find((p) => p.id === parseInt(id));
-
-  if (!project) return <div>Project not found!</div>;
+  const p = projects.find((x) => x.id === parseInt(id));
 
   return (
-    <div className="p-8 max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold mb-4">{project.name}</h1>
-      <img src={project.image} alt={project.name} className="w-full h-64 object-cover rounded-lg mb-6" />
-      <p className="text-lg mb-4">{project.description}</p>
-      <div className="mb-4"><strong>Tech Stack:</strong> {project.tech.join(', ')}</div>
-      <div className="mb-4"><strong>Challenges:</strong> {project.challenges}</div>
-      <div className="mb-4"><strong>Future Plans:</strong> {project.futurePlans}</div>
-      <div className="flex gap-4">
-        <a href={project.liveLink} className="btn btn-primary">Live Demo</a>
-        <a href={project.gitHub} className="btn btn-outline">GitHub</a>
-        <Link to="/" className="btn">Back Home</Link>
+    <div className="p-8 max-w-2xl mx-auto">
+      <h1 className="text-4xl font-bold mb-4">{p.name}</h1>
+      <p className="mb-4">{p.description}</p>
+      <div className="bg-base-200 p-4 rounded-lg mb-4">
+        <p><strong>Stack:</strong> {p.tech.join(', ')}</p>
+        <p><strong>Challenges:</strong> {p.challenges}</p>
+        <p><strong>Future:</strong> {p.futurePlans}</p>
+      </div>
+      <div className="flex gap-2">
+        <a href={p.liveLink} className="btn btn-primary">Live</a>
+        <a href={p.gitHub} className="btn btn-secondary">GitHub</a>
+        <Link to="/" className="btn btn-ghost">Back</Link>
       </div>
     </div>
   );
