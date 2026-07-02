@@ -32,7 +32,7 @@ export default function ProjectCard({ project }) {
 
       <div className="mt-5 flex gap-4 font-mono text-sm">
         {project.live && (
-          
+          <a
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
@@ -42,7 +42,7 @@ export default function ProjectCard({ project }) {
           </a>
         )}
         {project.repo && (
-          
+          <a
             href={project.repo}
             target="_blank"
             rel="noopener noreferrer"

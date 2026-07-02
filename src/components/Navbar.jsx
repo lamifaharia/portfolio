@@ -28,7 +28,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        
+        <a
           href="#contact"
           className="hidden rounded-md border border-cyan/40 px-4 py-2 font-mono text-sm text-cyan transition hover:shadow-glowCyan md:block"
         >

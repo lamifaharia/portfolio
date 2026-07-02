@@ -25,7 +25,7 @@ export default function Hero() {
     <section id="top" className="mx-auto max-w-6xl px-6 pt-20 pb-24">
       <div className="grid items-center gap-12 md:grid-cols-2">
         <div>
-          <p className="section-label mb-4 text-magenta">// hello_world</p>
+          <p className="section-label mb-4 text-magenta"></p>
           <h1 className="font-display text-4xl font-semibold leading-tight sm:text-5xl">
             Building clean, full-stack
             <span className="text-cyan"> web experiences.</span>
@@ -36,13 +36,13 @@ export default function Hero() {
             Node/MongoDB back ends.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            
+            <a
               href="#projects"
               className="rounded-md bg-cyan px-5 py-3 font-mono text-sm font-medium text-bg transition hover:shadow-glowCyan"
             >
               view_projects()
             </a>
-            
+            <a
               href="/Faharia_Lami_CV.pdf"
               download
               className="rounded-md border border-white/15 px-5 py-3 font-mono text-sm text-ink transition hover:border-magenta hover:text-magenta"

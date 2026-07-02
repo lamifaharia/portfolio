@@ -43,7 +43,7 @@ export default function Contact() {
         <div className="rounded-xl border border-white/10 bg-surface p-6">
           <p className="font-mono text-xs text-muted">socials</p>
           <div className="mt-4 flex flex-col gap-3 font-mono text-sm">
-            
+            <a
               href="https://github.com/lamifaharia"
               target="_blank"
               rel="noopener noreferrer"
@@ -51,7 +51,7 @@ export default function Contact() {
             >
               github.com/lamifaharia ↗
             </a>
-            
+            <a
               href="https://linkedin.com/in/faharialami"
               target="_blank"
               rel="noopener noreferrer"

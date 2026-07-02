@@ -1,18 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-bg: #0B0E14;
+  --color-surface: #131720;
+  --color-surface2: #1B212C;
+  --color-ink: #E6E6E8;
+  --color-muted: #8B92A8;
+  --color-cyan: #4DEEEA;
+  --color-magenta: #FF3EA5;
+  --color-green: #39FF88;
+
+  /* Fonts */
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: Inter, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Shadows */
+  --shadow-glowCyan: 0 0 18px rgba(77, 238, 234, 0.35);
+  --shadow-glowMagenta: 0 0 18px rgba(255, 62, 165, 0.35);
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
 }
 
 /* comment-style section label */
 .section-label {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: var(--font-mono);
   font-size: 0.8rem;
   letter-spacing: 0.02em;
 }
@@ -22,7 +41,7 @@ body {
   display: inline-block;
   width: 9px;
   height: 1.1em;
-  background: #4deeea;
+  background: var(--color-cyan);
   margin-left: 4px;
   animation: blink 1s steps(1) infinite;
   vertical-align: text-bottom;
@@ -57,6 +76,6 @@ body {
 }
 
 ::selection {
-  background: #ff3ea5;
-  color: #0b0e14;
+  background: var(--color-magenta);
+  color: var(--color-bg);
 }
