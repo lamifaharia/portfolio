@@ -6,10 +6,9 @@ export default function About() {
       <div className="mt-8 grid gap-10 md:grid-cols-3">
         <div className="md:col-span-1">
           <img
-  src="/public/images/faharia_lami.jpeg"
+  src="/images/faharia_lami.jpeg"
   alt="Faharia Lami"
   className="aspect-square w-full rounded-xl border border-white/10 object-cover object-top"
-  // ---------------------------------------------------
 />
         </div>
         <div className="md:col-span-2">
