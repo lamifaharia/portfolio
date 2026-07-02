@@ -12,7 +12,6 @@ export default function Contact() {
 
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 py-20">
-      <p className="section-label text-magenta">// 05_contact</p>
       <h2 className="mt-2 font-display text-3xl font-semibold">
         Let's build something
       </h2>

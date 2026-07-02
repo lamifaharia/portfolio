@@ -19,7 +19,6 @@ const groups = [
 export default function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-6xl px-6 py-20">
-      <p className="section-label text-magenta">// 02_skills</p>
       <h2 className="mt-2 font-display text-3xl font-semibold">Skills</h2>
 
       <div className="mt-8 grid gap-6 md:grid-cols-3">

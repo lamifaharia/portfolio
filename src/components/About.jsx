@@ -1,16 +1,16 @@
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-20">
-      <p className="section-label text-magenta">// 01_about</p>
       <h2 className="mt-2 font-display text-3xl font-semibold">About me</h2>
 
       <div className="mt-8 grid gap-10 md:grid-cols-3">
         <div className="md:col-span-1">
           <img
-            src="/faharia-photo.jpeg"
-            alt="Faharia Lami"
-            className="aspect-square w-full rounded-xl border border-white/10 object-cover"
-          />
+  src="/public/images/faharia_lami.jpeg"
+  alt="Faharia Lami"
+  className="aspect-square w-full rounded-xl border border-white/10 object-cover object-top"
+  // ---------------------------------------------------
+/>
         </div>
         <div className="md:col-span-2">
           <p className="text-muted leading-relaxed">

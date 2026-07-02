@@ -7,8 +7,8 @@ const projects = [
     description:
       'A platform connecting blood donors and recipients, with role-based dashboards, donation requests, and funding via Stripe.',
     stack: ['MongoDB', 'Express', 'React', 'Node.js', 'JWT', 'Stripe'],
-    live: '',
-    repo: '',
+    live: 'https://resplendent-palmier-599907.netlify.app/',
+    repo: 'https://github.com/lamifaharia/blood-donation-app',
   },
   {
     id: 'green-earth',

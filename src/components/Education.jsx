@@ -7,7 +7,6 @@ const timeline = [
 export default function Education() {
   return (
     <section id="education" className="mx-auto max-w-6xl px-6 py-20">
-      <p className="section-label text-magenta">// 04_education</p>
       <h2 className="mt-2 font-display text-3xl font-semibold">Education</h2>
 
       <ol className="mt-8 space-y-6 border-l border-white/10 pl-6">
