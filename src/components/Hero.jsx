@@ -13,11 +13,16 @@ export default function Hero() {
 
   useEffect(() => {
     let i = 0
+
     const interval = setInterval(() => {
       setTyped(fullText.slice(0, i))
       i++
-      if (i > fullText.length) clearInterval(interval)
+
+      if (i > fullText.length) {
+        clearInterval(interval)
+      }
     }, 12)
+
     return () => clearInterval(interval)
   }, [])
 
@@ -26,15 +31,18 @@ export default function Hero() {
       <div className="grid items-center gap-12 md:grid-cols-2">
         <div>
           <p className="section-label mb-4 text-magenta"></p>
+
           <h1 className="font-display text-4xl font-semibold leading-tight sm:text-5xl">
             Building clean, full-stack
             <span className="text-cyan"> web experiences.</span>
           </h1>
+
           <p className="mt-5 max-w-md text-muted">
             I'm Faharia Lami, a full stack developer crafting responsive
             interfaces and the APIs that power them, from React front ends to
             Node/MongoDB back ends.
           </p>
+
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#projects"
@@ -42,12 +50,14 @@ export default function Hero() {
             >
               view_projects()
             </a>
+
             <a
-              href="/Faharia_Lami_CV.pdf"
-              download
+              href={`${import.meta.env.BASE_URL}Resume - Lami.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-md border border-white/15 px-5 py-3 font-mono text-sm text-ink transition hover:border-magenta hover:text-magenta"
             >
-              download_resume()
+              view_resume()
             </a>
           </div>
         </div>
@@ -58,6 +68,7 @@ export default function Hero() {
             <span className="h-3 w-3 rounded-full bg-cyan/70" />
             <span className="h-3 w-3 rounded-full bg-green/70" />
           </div>
+
           <pre className="overflow-x-auto font-mono text-sm leading-relaxed text-ink">
             <code>
               {typed}
