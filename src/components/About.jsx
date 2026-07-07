@@ -15,7 +15,7 @@ export default function About() {
           <p className="text-muted leading-relaxed">
             I'm a full stack developer currently pursuing my BSc in CSE at
             Northern University Bangladesh. My work centers on React on the
-            front end and Node.js, Express, and MongoDB on the back end —
+            front end and Node.js, Express, and MongoDB on the back end.
             I enjoy taking a project from a rough requirement doc to a live,
             responsive product.
           </p>
