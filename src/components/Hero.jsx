@@ -31,7 +31,7 @@ export default function Hero() {
             <span className="text-cyan"> web experiences.</span>
           </h1>
           <p className="mt-5 max-w-md text-muted">
-            I'm Faharia — a full stack developer crafting responsive
+            I'm Faharia Lami, a full stack developer crafting responsive
             interfaces and the APIs that power them, from React front ends to
             Node/MongoDB back ends.
           </p>
