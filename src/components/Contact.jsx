@@ -12,9 +12,8 @@ export default function Contact() {
 
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 py-20">
-      <h2 className="mt-2 font-display text-3xl font-semibold">
-        Let's build something
-      </h2>
+            <h2 className="mt-2 font-mono  text-cyan tracking-widest text-2xl">Let's Build Something</h2>
+
       <p className="mt-3 max-w-md text-muted">
         Open to full stack roles and freelance work. Reach out any time.
       </p>

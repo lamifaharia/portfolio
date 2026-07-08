@@ -1,27 +1,74 @@
 const timeline = [
-  { period: '2022 – 2026', title: 'BSc in CSE', place: 'Northern University Bangladesh', status: 'in progress' },
-  { period: '2018 – 2020', title: 'HSC in Science', place: "Central Women's College" },
-  { period: '2017 – 2018', title: 'SSC in Science', place: 'Gouripur SA High School' },
-]
+  {
+    period: "2022 – 2026",
+    title: "Bachelor of Science in Computer Science & Engineering",
+    place: "Northern University Bangladesh",
+    status: "In Progress",
+  },
+  {
+    period: "2018 – 2020",
+    title: "Higher Secondary Certificate (Science)",
+    place: "Central Women's College",
+  },
+  {
+    period: "2017 – 2018",
+    title: "Secondary School Certificate (Science)",
+    place: "Gouripur S.A. High School",
+  },
+];
 
 export default function Education() {
   return (
-    <section id="education" className="mx-auto max-w-6xl px-6 py-20">
-      <h2 className="mt-2 font-display text-3xl font-semibold">Education</h2>
+    <section id="education" className="mx-auto max-w-6xl px-6 py-24">
+      <div className="mb-14">
+        <p className="font-mono text-cyan text-sm tracking-widest uppercase">
+          Education
+        </p>
 
-      <ol className="mt-8 space-y-6 border-l border-white/10 pl-6">
-        {timeline.map((t) => (
-          <li key={t.title} className="relative">
-            <span className="absolute -left-[29px] top-1.5 h-2.5 w-2.5 rounded-full bg-cyan" />
-            <p className="font-mono text-xs text-muted">
-              {t.period}
-              {t.status && <span className="ml-2 text-green">· {t.status}</span>}
-            </p>
-            <p className="mt-1 font-display text-lg font-medium">{t.title}</p>
-            <p className="text-sm text-muted">{t.place}</p>
-          </li>
+        
+
+        <p className="mt-3 max-w-2xl text-muted leading-7">
+          My educational background that shaped my foundation in Computer
+          Science and strengthened my passion for software engineering.
+        </p>
+      </div>
+
+      <div className="space-y-6">
+        {timeline.map((item, index) => (
+          <div
+            key={index}
+            className="group rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-sm transition-all duration-300 hover:border-cyan/50 hover:bg-white/[0.05] hover:-translate-y-1"
+          >
+            <div className="grid md:grid-cols-[180px_1fr]">
+              {/* Left */}
+
+              <div className="border-b border-white/10 p-6 md:border-b-0 md:border-r">
+                <p className="font-mono text-sm text-cyan">
+                  {item.period}
+                </p>
+
+                {item.status && (
+                  <span className="mt-3 inline-flex rounded-full border border-green/30 bg-green/10 px-3 py-1 text-xs font-medium text-green">
+                    {item.status}
+                  </span>
+                )}
+              </div>
+
+              {/* Right */}
+
+              <div className="p-6">
+                <h3 className="font-display text-2xl font-semibold transition-colors group-hover:text-cyan">
+                  {item.title}
+                </h3>
+
+                <p className="mt-2 text-muted text-lg">
+                  {item.place}
+                </p>
+              </div>
+            </div>
+          </div>
         ))}
-      </ol>
+      </div>
     </section>
-  )
+  );
 }

@@ -1,7 +1,8 @@
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-20">
-      <h2 className="mt-2 font-display text-3xl font-semibold">About me</h2>
+      <h2 className="mt-2 font-mono  text-cyan tracking-widest text-2xl">About me</h2>
+
 
       <div className="mt-8 grid gap-10 md:grid-cols-3">
         <div className="md:col-span-1">
